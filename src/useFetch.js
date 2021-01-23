@@ -29,7 +29,9 @@ const StatusResolver = ({status, noData, children}) => {
 StatusResolver.defaultProps = {
   noData: false,
 };
+const s = () => {
 
+}
 const useFetch = (url, fetchParams = {}) => {
   const [data, setData] = React.useState(null);
   const [status, setStatus] = React.useState("idle");
@@ -90,8 +92,10 @@ const FetchComponent = () => {
         noData={data !== null && data.length === 0}
         status={status}
       >
+
         <div>OK!</div>
-      </StatusResolver>  
+      </StatusResolver>
+      <div></div>
     </>
   )
 }
