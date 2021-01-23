@@ -30,6 +30,7 @@ StatusResolver.defaultProps = {
   noData: false,
 };
 const s = () => {
+  let rrtty = 9
 
 }
 const useFetch = (url, fetchParams = {}) => {
